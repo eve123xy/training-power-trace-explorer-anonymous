@@ -8,7 +8,7 @@ Reviewed GPU training and inference power traces are published through GitHub Pa
 
 **[https://eve123xy.github.io/training-power-trace-explorer-anonymous/](https://eve123xy.github.io/training-power-trace-explorer-anonymous/)**
 
-The public build is generated from `github-pages/` with `npm run build:pages`. It contains only intentionally public, research-ready canonical exports and clearly labeled synthetic demonstrations; it does not include training logs, Slurm scripts, cache files, source-system paths, or access to the local FastAPI service. The complete scanner and private-data API remain local by design. Published artifacts are served from the configured public data store; see [the public-data guide](docs/google-drive-public-data.md) and [the contributor schema](docs/DATA_SUBMISSION.md).
+The public build is generated from `github-pages/` with `npm run build:pages`. It contains only intentionally public, research-ready canonical exports and clearly labeled synthetic demonstrations; it does not include training logs, Slurm scripts, cache files, source-system paths, or access to the local FastAPI service. The complete scanner and private-data API remain local by design. For this anonymous review artifact, the reviewed catalog and every run payload are bundled with the site as static gzip-compressed JSON under `github-pages/public/data/` (built by `scripts/bundle_anonymous_public_data.mjs`); the published site contacts no third-party data store. See [the contributor schema](docs/DATA_SUBMISSION.md) for the record format.
 
 ## Community submissions
 
